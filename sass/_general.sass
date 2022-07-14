@@ -4,6 +4,7 @@
 body 
     display: flex
     flex-direction: column
+    overflow: overlay
     background-color: $color-light 
 
 .container 
@@ -40,6 +41,9 @@ section
     padding-top: 100px
     padding-bottom: 92px
 
+.humburger
+    display: none
+
 .title
     font-family: 'Alata'
     font-weight: 400
@@ -67,7 +71,8 @@ section
 
 .slider
     &_wrapper 
-        width: 1190px
+        max-width: 1270px
+        overflow: hidden
         display: flex
         gap: 40px
         align-items: center

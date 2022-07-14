@@ -3,18 +3,80 @@
     &_wrapper
         display: flex
         gap: 30px
+        justify-content: space-between
         margin-bottom: 48px
         margin-top: 12px
+    &_img
+        width: 100%
+    &_list
+        display: none
+    &_info
+        display: flex
+        width: 100%
+        flex-direction: column
+        justify-content: space-between
+        gap: 12px
     &_card
         padding: 30px 59px 35px 59px
         background: $color-light
         display: flex
         flex-direction: column
         gap: 12px
-        align-items: center
+        justify-content: space-between
         font-family: 'Alata'
         font-weight: 400
         font-size: 30px
         line-height: 41px
         text-align: center
         color: $color-dark
+        &:hover 
+            padding: 20px 40px 35px 20px
+            max-height: 350px
+            max-width: 350px
+
+.our-things_card:hover .our-things_img
+    width: 35%
+
+.our-things_card:hover .our-things_list
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-top: 0
+    gap: 20px
+    font-weight: 400
+    font-size: 22px
+    line-height: 25px
+    list-style: none
+
+.our-things_card:hover .our-things_info
+    flex-direction: row
+    align-items: center
+    gap: 10px
+
+.item-more 
+    display: flex
+
+.block-arrow
+    transition: all 0.6s
+    width: 43px
+    height: 17px
+
+.our-things_item
+    transition: all 0.6s
+    cursor: pointer
+    &:hover
+        margin-left: 20px
+    &-more 
+        display: flex
+        align-items: center
+        justify-content: start
+        gap: 10px
+        transition: all 0.6s
+        cursor: pointer
+        &:hover .block-arrow
+            margin-left: 20px
+            
+
+
+
+
