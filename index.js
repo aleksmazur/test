@@ -8,6 +8,7 @@ const contactFormTitle = document.querySelector('.contact-form_title');
 const form = document.querySelector('.form');
 const feedback = document.querySelector('.feedback');
 
+
 function openMenu() {
     menu.classList.toggle('adaptive-menu-active');
     overlay.classList.toggle('overlay-active');
