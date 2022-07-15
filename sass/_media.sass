@@ -37,41 +37,42 @@
             word-wrap: break-word
     .btn
         width: 196px
-    .nav_list
-        flex-direction: column
-        gap: 6px
     .title
         font-size: 40px
         line-height: 100px
     .preview_header
         font-size: 50px
         line-height: 60px
-    
+    .overlay
+        display: flex
+
+    .humburger
+        position: relative
+        margin-top: 15px
+        display: flex
+        flex-direction: column
+        gap: 6px
+        width: 25px
+        height: 9px
+        cursor: pointer
+        transition: all 0.6s
+        &:hover
+            transform: scale(1.2)
+        span
+            height: 2px
+            width: 100%
+            background: $color-dark
+    .header
+        .nav
+            display: none
+        &_container
+            padding: 4px 0 0 0
+
+
     @media (max-width: 321px)
         section
             padding-top: 0
             padding-bottom: 0
-        .humburger
-            position: relative
-            margin-top: 15px
-            display: flex
-            flex-direction: column
-            gap: 6px
-            width: 25px
-            height: 9px
-            cursor: pointer
-            transition: all 0.6s
-            &:hover
-                transform: scale(1.2)
-            span
-                height: 2px
-                width: 100%
-                background: $color-dark
-        .header
-            .nav
-                display: none
-            &_container
-                padding: 4px 0 0 0
         .logo
             width: 35%
         .preview
@@ -151,13 +152,6 @@
         .form 
             margin-top: 22px
             gap: 10px
-
-        .overlay
-            display: flex
-            
-
-
-
 
 
 

@@ -4,15 +4,16 @@
     position: absolute
     overflow-x: hidden
     transition: all 0.6s
-
+    z-index: 5
 .adaptive-menu 
+    z-index: 10
     padding-bottom: 69px
     width: 100vw
     position: fixed
     display: flex
     flex-direction: column
     top: 0
-    right: -320px
+    right: -100vw
     transition: all 0.6s
     background: $color-light
     .header
@@ -42,8 +43,10 @@
     .nav 
         margin-top: 42px
         margin-bottom: 83px
+        color: $color-dark
         &_list 
             display: flex
+            flex-direction: column
             align-items: center
             gap: 23px
             list-style: none
@@ -78,3 +81,6 @@
 .adaptive-menu-active 
     right: 0
     transition: all 0.6s
+
+.hidden
+    visibility: hidden
