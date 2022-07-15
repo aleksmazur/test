@@ -1,6 +1,7 @@
 @media (max-width: 1271px)
-    .slide1
-        display: none
+    .slider
+        width: 933px
+        transform: translateX(0px)
     .slider_wrapper 
         transform: translateX(0)
     .contact 
@@ -9,18 +10,16 @@
         padding: 15px
 
 @media (max-width: 971px)
-    .slide2
-        display: none
+    .slider
+        width: 648px
     .services_block
         flex-direction: column
 
 @media (max-width: 701px)
-    .slide3
-        display: none
+    .slider
+        width: 363px
     .our-things_wrapper
         flex-direction: column
-
-@media (max-width: 701px)
     .about-us_content
         display: flex
         flex-direction: column
@@ -43,6 +42,21 @@
     .preview_header
         font-size: 50px
         line-height: 60px
+
+    .slider
+        margin-left: -10px
+        width: 308px
+        gap: 10px
+        margin-bottom: 42px
+
+    .slide
+        width: 272px
+        height: 227px
+    
+    .left_arrow, .right_arrow
+        width: 8px
+        height: 23px
+
     .overlay
         display: flex
 
@@ -103,20 +117,6 @@
         .our-things_wrapper
             margin-top: 0
             gap: 24px
-
-        .slider_wrapper
-            margin: 0 -10px
-            max-width: 308px
-            gap: 10px
-            margin-bottom: 42px
-
-        .slide
-            width: 272px
-            height: 227px
-        
-        .left_arrow, .right_arrow
-            width: 8px
-            height: 23px
 
         .beautiful 
             padding-bottom: 68px

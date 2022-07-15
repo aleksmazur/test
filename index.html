@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/icons/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -109,13 +110,15 @@
             <div class="container">
                 <h2 class="title">Beautiful</h2>
                 <div class="divider divider_yellow"></div>
-                <div class="slider_wrapper">
+                <div class="slider">
                     <img src="assets/icons/slider-arrow.svg" alt="slider-arr-left" class="left_arrow">
-                    <div class="slider_inner">
-                        <div class="slide slide1"><img src="assets/img/slider/slider1.jpg" alt="slider1" class="slide_img"></div>
-                        <div class="slide slide2"><img src="assets/img/slider/slider2.jpg" alt="slider2" class="slide_img"></div>
-                        <div class="slide slide3"><img src="assets/img/slider/slider3.jpg" alt="slider3" class="slide_img"></div>
-                        <div class="slide slide4"><img src="assets/img/slider/slider4.jpg" alt="slider4" class="slide_img"></div>    
+                    <div class="slider_wrapper">
+                        <div class="slider_inner">
+                            <div class="slide slide1"><img src="assets/img/slider/slider1.jpg" alt="slider1" class="slide_img"></div>
+                            <div class="slide slide2"><img src="assets/img/slider/slider2.jpg" alt="slider2" class="slide_img"></div>
+                            <div class="slide slide3"><img src="assets/img/slider/slider3.jpg" alt="slider3" class="slide_img"></div>
+                            <div class="slide slide4"><img src="assets/img/slider/slider4.jpg" alt="slider4" class="slide_img"></div>    
+                        </div>
                     </div>
                     <img src="assets/icons/slider-arrow.svg" alt="slider-arr-right" class="right_arrow">
                 </div>
@@ -176,9 +179,9 @@
                 </div>
                 <div class="contact-form">
                     <p class="contact-form_title">Stay in the loop<br>by getting on<br>our mailing list</p>
-                    <form class="form">
-                        <input type="text" name="nane" placeholder="NAME *" class="contact_input">
-                        <input type="email" name="email" placeholder="E-MAIL *" class="contact_input">
+                    <form action="#" class="form">
+                        <input required type="text" name="nane" placeholder="NAME *" class="contact_input">
+                        <input required type="email" name="email" placeholder="E-MAIL *" class="contact_input">
                         <button class="btn btn_send">
                             send<img src="assets/icons/contact.svg" alt="Contact" class="btn-icon">
                         </button>
@@ -206,6 +209,7 @@
             </button>
         </div>
     </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
     <script src="index.js"></script>
 </body>
 </html>

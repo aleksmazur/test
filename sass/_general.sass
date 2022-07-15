@@ -75,18 +75,26 @@ section
     color: $color-text
 
 .slider
+    width: 1218px
+    display: flex
+    align-items: center
+    margin: 0 auto
+    gap: 40px
+    margin-bottom: 72px
+    transform: translateX(-54px)
     &_wrapper 
-        // max-width: 1270px
-        // overflow: hidden
+        // width: 100%
         display: flex
-        gap: 40px
         align-items: center
-        margin-bottom: 72px
-        transform: translateX(-54px)
+        overflow: hidden
     &_inner
+        width: 1140px
         display: flex
+        position: relative
+        left: 0
         gap: 30px
         align-items: center
+        transition: all 0.5s
 
 .slide 
     width: 255px
