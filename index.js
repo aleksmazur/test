@@ -62,4 +62,4 @@ prev.addEventListener('click', () => {
         offset = 855;
     }
     slideWindow.style.left = -offset + 'px';
-})
+});
