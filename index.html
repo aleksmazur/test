@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container">
             <div class="header_container">
-                <img src="assets/icons/logo-dark.svg" alt="logo" class="logo">
+                <img src="assets/icons/logo-dark.svg" alt="logo" class="logo logo-dark">
                 <nav class="nav">
                     <ul class="nav_list">
                         <li class="nav_item"><a href="#about-us" class="nav_link">About</a></li>
@@ -176,16 +176,36 @@
                 </div>
                 <div class="contact-form">
                     <p class="contact-form_title">Stay in the loop<br>by getting on<br>our mailing list</p>
-                    <form action method="POST" class="form">
+                    <form class="form">
                         <input type="text" name="nane" placeholder="NAME *" class="contact_input">
                         <input type="email" name="email" placeholder="E-MAIL *" class="contact_input">
                         <button class="btn btn_long">
                             send<img src="assets/icons/contact.svg" alt="Contact" class="btn-icon">
                         </button>
                     </form>
+                    <div class="feedback">Your can contact us <a href="#" class="contact_link contact_link-small">info@marvelpowergroup.com</a> if you need additional assistance </div>
                 </div>
             </section>
         </div>
     </footer>
+    <div class="overlay">
+        <div class="adaptive-menu">
+            <div class="header_container">
+                <img src="assets/icons/logo-light.svg" alt="logo" class="logo logo-light">
+                <div class="humburger"><span></span><span></span></div>
+            </div>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#about-us" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#services" class="nav_link">Services</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn">
+                contuct us<img src="assets/icons/contact.svg" alt="Contact" class="btn_icon">
+            </button>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

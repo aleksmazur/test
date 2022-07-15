@@ -14,34 +14,31 @@
         right: 0
         bottom: 0
     &_container 
-        position: relative
-        z-index: 3
         display: flex
         justify-content: space-between
         padding: 37px 0
-
-.nav 
-    &_list 
-        display: flex
-        align-items: center
-        gap: 66px
-        list-style: none
-    &_link
-        position: relative
-        text-decoration: none
-        font-weight: 400
-        font-size: 18px
-        line-height: 18px
-        color: $color-dark
-        &::after
-            display: block
-            position: absolute
-            left: 0
-            bottom: -6px
-            width: 0
-            height: 2px
-            background-color: $color-main
-            content: ''
-            transition: width 0.3s ease-out
-        &:hover::after
-            width: 100%
+    .nav 
+        &_list 
+            display: flex
+            align-items: center
+            gap: 66px
+            list-style: none
+        &_link
+            position: relative
+            text-decoration: none
+            font-weight: 400
+            font-size: 18px
+            line-height: 18px
+            color: $color-dark
+            &::after
+                display: block
+                position: absolute
+                left: 0
+                bottom: -6px
+                width: 0
+                height: 2px
+                background-color: $color-main
+                content: ''
+                transition: width 0.3s ease-out
+            &:hover::after
+                width: 100%
